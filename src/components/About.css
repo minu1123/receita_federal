@@ -65,3 +65,38 @@
   color: #b2dfdb;
   line-height: 1.5;
 }
+
+/* 🔧 Responsividade para celulares */
+@media (max-width: 600px) {
+  .about-section {
+    padding: 60px 20px;
+  }
+
+  .about-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-intro {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .about-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .about-grid {
+    gap: 16px;
+  }
+
+  .card-number {
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
+    line-height: 28px;
+    top: -14px;
+    left: -14px;
+  }
+}

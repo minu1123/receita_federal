@@ -50,7 +50,6 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-
 .hero-image {
   flex: 1;
   display: flex;
@@ -62,10 +61,43 @@
   max-width: 300px;
   width: 100%;
   height: auto;
-  border-radius: 0; 
-  box-shadow: none; 
-  background: transparent; 
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
 }
 
+/* 🔧 Responsividade para dispositivos móveis */
+@media (max-width: 600px) {
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
 
+  .hero-text h1 {
+    font-size: 2rem;
+  }
 
+  .hero-text p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .hero-cta {
+    padding: 12px 24px;
+    font-size: 0.95rem;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .hero-placeholder {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+  }
+}

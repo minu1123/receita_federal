@@ -35,16 +35,15 @@
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   padding: 24px;
   max-width: 300px;
+  width: 100%;
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 
 .mission-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); /* mais destaque no hover */
 }
-
 
 .mission-card h3 {
   font-size: 1.1rem;
@@ -57,7 +56,6 @@
   color: #555;
   line-height: 1.5;
 }
-
 
 .mission-icon {
   width: 60px;
@@ -76,4 +74,48 @@
 
 .mission-card:hover .mission-icon {
   transform: scale(1.1);
+}
+
+/* 🔧 Responsividade para dispositivos móveis */
+@media (max-width: 600px) {
+  .mission-section {
+    padding: 60px 20px;
+  }
+
+  .mission-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .mission-intro {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+
+  .mission-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .mission-card {
+    max-width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .mission-card h3 {
+    font-size: 1rem;
+  }
+
+  .mission-card p {
+    font-size: 0.9rem;
+  }
+
+  .mission-icon {
+    margin: 0 auto 16px;
+    font-size: 1.6rem;
+    width: 50px;
+    height: 50px;
+  }
 }

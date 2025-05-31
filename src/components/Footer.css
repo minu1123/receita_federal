@@ -121,3 +121,40 @@
   padding-top: 20px;
   color: #a7ffeb;
 }
+
+/* 🔧 Responsividade para dispositivos móveis */
+@media (max-width: 600px) {
+  .footer {
+    padding: 40px 20px;
+    font-size: 0.9rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-left {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .footer-left h3 {
+    font-size: 1.2rem;
+  }
+
+  .footer-form {
+    max-width: 100%;
+  }
+
+  .footer-form h4 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    font-size: 0.85rem;
+    margin-top: 30px;
+  }
+}

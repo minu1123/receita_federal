@@ -18,13 +18,13 @@
   max-width: 100%;
 }
 
-
 .member {
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
   padding: 20px;
   max-width: 200px;
+  width: 100%;
 }
 
 .member img {
@@ -43,4 +43,39 @@
 .member p {
   font-size: 0.85rem;
   color: #666;
+}
+
+/* 🔧 Responsividade para celular */
+@media (max-width: 600px) {
+  .team {
+    padding: 60px 16px;
+  }
+
+  .team h2 {
+    font-size: 1.6rem;
+  }
+
+  .team-members {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .member {
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  .member img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .member h3 {
+    font-size: 0.95rem;
+  }
+
+  .member p {
+    font-size: 0.8rem;
+  }
 }

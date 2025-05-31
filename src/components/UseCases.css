@@ -35,6 +35,7 @@
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   max-width: 300px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -84,4 +85,51 @@
   font-size: 0.9rem;
   color: #444;
   line-height: 1.4;
+}
+
+/* 🔧 Responsividade para celular */
+@media (max-width: 600px) {
+  .usecases-section {
+    padding: 60px 16px;
+  }
+
+  .usecases-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .usecases-intro {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+
+  .usecases-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .usecase-card {
+    max-width: 100%;
+  }
+
+  .usecase-image {
+    height: 160px;
+  }
+
+  .usecase-number {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+    top: -14px;
+    left: 16px;
+  }
+
+  .usecase-content h3 {
+    font-size: 0.95rem;
+  }
+
+  .usecase-content p {
+    font-size: 0.85rem;
+  }
 }
