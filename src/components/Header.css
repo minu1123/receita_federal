@@ -23,10 +23,9 @@
 }
 
 .header-center {
-  flex: 2;
+  width: 500px; /* <<< define largura exata da área de links */
   display: flex;
-  justify-content: flex-start;
-  margin-left: 80px; /* <<< ajuste chave */
+  justify-content: flex-start; /* alinha os links no início dessa área */
 }
 
 .header-right {
@@ -98,7 +97,6 @@
   }
 
   .header-center {
-    margin-left: 0; /* remove ajuste no mobile */
     width: 100%;
     justify-content: flex-start;
   }
