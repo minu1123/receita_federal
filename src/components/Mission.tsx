@@ -7,7 +7,7 @@ const Mission: React.FC = () => {
       <div className="mission-container">
         <h2>Nossa Missão</h2>
         <p className="mission-intro">
-          O SolarVape Charger nasceu com o propósito de transformar resíduos em soluções.
+          O Enervape Charger nasceu com o propósito de transformar resíduos em soluções.
           Nosso objetivo é reduzir o lixo eletrônico e ampliar o acesso à energia sustentável em locais públicos.
         </p>
         <div className="mission-cards">
