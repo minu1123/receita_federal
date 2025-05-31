@@ -10,8 +10,6 @@
   -webkit-backdrop-filter: blur(8px);
 }
 
-wbr
-/*teste*/
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -71,11 +69,10 @@ wbr
   cursor: pointer;
   color: #0c2b22;
   position: absolute;
-  top: 20px; /* ícone vai ficar colado no topo */
+  top: 16px;
   right: 20px;
   z-index: 1000;
 }
-
 
 .mobile-only {
   display: none;
