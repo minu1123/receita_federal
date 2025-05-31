@@ -26,7 +26,7 @@
   flex: 2;
   display: flex;
   justify-content: center;
-  margin-right: 40px; /* este é o segredo: move os links levemente para a esquerda */
+  margin-right: 90px; /* este é o segredo: move os links levemente para a esquerda */
 }
 
 .header-right {
