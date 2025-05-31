@@ -25,7 +25,6 @@
   color: #000000;
 }
 
-/* Links padrão */
 .nav-links {
   display: flex;
   gap: 24px;
@@ -34,7 +33,6 @@
 .nav-links a {
   color: #000000;
   font-size: 0.95rem;
-  text-decoration: none;
   transition: color 0.3s;
 }
 
@@ -42,7 +40,6 @@
   color: #00e676;
 }
 
-/* Botão "Fale Conosco" */
 .header-button {
   background-color: #03d46f;
   padding: 10px 20px;
@@ -61,15 +58,15 @@
   display: none;
 }
 
-/* Ícone do menu hambúrguer */
+/* Estiliza o ícone do hambúrguer */
 .menu-icon {
   display: none;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #0c2b22;
 }
 
-/* --- RESPONSIVO --- */
+/* Responsivo */
 @media (max-width: 600px) {
   .main-header {
     padding: 12px 20px;
@@ -87,30 +84,26 @@
     gap: 12px;
     width: 100%;
     margin-top: 12px;
-    background-color: rgba(200, 255, 220, 0.9);
-    padding: 10px;
-    border-radius: 8px;
   }
 
   .nav-links a {
     font-size: 1rem;
-    padding: 8px 0;
   }
 
   .header-button {
-    font-size: 0.95rem;
-    padding: 10px;
+    padding: 10px 16px;
+    font-size: 0.9rem;
     width: 100%;
     text-align: center;
   }
 
-  /* Mostra o ícone do menu */
+  /* Mostra o botão de menu hambúrguer */
   .menu-icon {
     display: block;
   }
 
-  /* Ativa o menu quando o checkbox está checado */
-  #menu-toggle:checked ~ .nav-links {
+  /* Quando o checkbox está checado, mostra o menu */
+  #menu-toggle:checked + .menu-icon + .nav-links {
     display: flex;
   }
 }
