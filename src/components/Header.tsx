@@ -4,10 +4,11 @@
       <a href="#inicio" className="logo">Enervape</a>
     </div>
 
-    <div className="header-center">
-      <input type="checkbox" id="menu-toggle" />
-      <label htmlFor="menu-toggle" className="menu-icon">☰</label>
+    {/* ✅ menu-toggle fora da header-center */}
+    <input type="checkbox" id="menu-toggle" />
+    <label htmlFor="menu-toggle" className="menu-icon">☰</label>
 
+    <div className="header-center">
       <nav className="nav-links">
         <a href="#mission">Missão</a>
         <a href="#about">Sobre</a>
