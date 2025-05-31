@@ -35,7 +35,7 @@ const About: React.FC = () => {
             <div className="card-number">4</div>
             <h3>Painel Solar Integrado</h3>
             <p>
-              Pequeno painel solar recarrega o sistema automaticamente durante o dia, ideal para pontos de ônibus ou locais públicos.
+              Pequeno painel solar recarrega automaticamente durante o dia, ideal para locais públicos, pontos de Ônibus ou acampamentos.
             </p>
           </div>
         </div>
