@@ -4,7 +4,6 @@
       <a href="#inicio" className="logo">Enervape</a>
     </div>
 
-    {/* ✅ menu-toggle fora da header-center */}
     <input type="checkbox" id="menu-toggle" />
     <label htmlFor="menu-toggle" className="menu-icon">☰</label>
 
