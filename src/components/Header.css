@@ -69,10 +69,11 @@
   cursor: pointer;
   color: #0c2b22;
   position: absolute;
-  top: 16px;
+  top: 6px; /* ícone vai ficar colado no topo */
   right: 20px;
   z-index: 1000;
 }
+
 
 .mobile-only {
   display: none;
