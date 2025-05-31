@@ -1,0 +1,54 @@
+.main-header {
+  width: 100%;
+  background: rgba(200, 255, 220, 0.5); /* Verde claro translúcido */
+  padding: 20px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px); /* Deixa o fundo levemente embaçado */
+  -webkit-backdrop-filter: blur(8px); /* Suporte Safari */
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: #000000;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00e676;
+}
+
+.header-button {
+  background-color: #03d46f;
+  padding: 10px 20px;
+  color: #0c2b22;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.header-button:hover {
+  background-color: #00c853;
+}

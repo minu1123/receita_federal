@@ -1,0 +1,87 @@
+.usecases-section {
+  background-color: #ffffff;
+  padding: 100px 5%;
+  text-align: center;
+}
+
+.usecases-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.usecases-section h2 {
+  font-size: 2rem;
+  color: #00c853;
+  margin-bottom: 12px;
+}
+
+.usecases-intro {
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 750px;
+  margin: 0 auto 40px;
+}
+
+.usecases-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.usecase-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.usecase-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.usecase-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.usecase-content {
+  padding: 20px;
+  position: relative;
+}
+
+.usecase-number {
+  position: absolute;
+  top: -18px;
+  left: 20px;
+  background-color: #00c853;
+  color: white;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 0 0 4px #ffffff;
+}
+
+.usecase-content h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #0c2b22;
+}
+
+.usecase-content p {
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.4;
+}
