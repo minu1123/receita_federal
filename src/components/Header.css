@@ -59,7 +59,6 @@
   background-color: #00c853;
 }
 
-/* Menu hamburguer (mobile) */
 #menu-toggle {
   display: none;
 }
@@ -75,7 +74,7 @@
   z-index: 200;
 }
 
-/* MOBILE */
+/* ---------- MOBILE ---------- */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -92,10 +91,11 @@
     transform: none;
     flex-direction: column;
     width: 100%;
-    margin-top: 16px;
-    background: rgba(200, 255, 220, 0.9);
-    padding: 10px;
+    margin-top: 60px;
+    background: rgba(200, 255, 220, 0.95);
+    padding: 16px;
     border-radius: 8px;
+    gap: 16px;
   }
 
   #menu-toggle:checked + .menu-icon + .nav-links {
@@ -103,13 +103,14 @@
   }
 
   .nav-links a {
-    width: 100%;
+    font-size: 1.1rem;
     padding: 8px 0;
+    width: 100%;
   }
 
   .header-button {
     width: 100%;
-    margin-top: 12px;
+    margin-top: 8px;
     text-align: center;
   }
 }
