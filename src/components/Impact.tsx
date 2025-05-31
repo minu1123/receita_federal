@@ -1,5 +1,5 @@
 import React from 'react';
-import './impact.css';
+import './Impact.css';
 
 const Impact: React.FC = () => {
   return (

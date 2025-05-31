@@ -1,5 +1,5 @@
 import React from 'react';
-import './hero.css';
+import './Hero.css';
 import vapeImg from '../assets/vape.png'; // ajuste para o nome real do arquivo
 
 const Hero: React.FC = () => {
