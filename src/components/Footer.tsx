@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
 
       {/* Seção de Membros */}
       <div className="footer-members">
-        <p><strong>Equipe:</strong> Miszael Costa, Rafael Costa e Willian Bizzero</p>
+        <p><strong>Equipe:</strong> Micael Costa, Miszael Costa, Rafael Costa e Willian Bizzero</p>
       </div>
 
       <div className="footer-bottom">
