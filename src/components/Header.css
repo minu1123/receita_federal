@@ -1,16 +1,16 @@
-ajusta esse codigo aqui 
+header fico mt grande no celular, coloque meno saduiche para celular
 
 
 .main-header {
   width: 100%;
-  background: rgba(200, 255, 220, 0.5);
+  background: rgba(200, 255, 220, 0.5); /* Verde claro translúcido */
   padding: 20px 40px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
   z-index: 100;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px); /* Deixa o fundo levemente embaçado */
+  -webkit-backdrop-filter: blur(8px); /* Suporte Safari */
 }
 
 .container {
@@ -19,7 +19,7 @@ ajusta esse codigo aqui
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -56,37 +56,23 @@ ajusta esse codigo aqui
   background-color: #00c853;
 }
 
-/* Oculta o checkbox */
-#menu-toggle {
-  display: none;
-}
-
-/* Estiliza o ícone do hambúrguer */
-.menu-icon {
-  display: none;
-  cursor: pointer;
-  font-size: 1.8rem;
-  color: #0c2b22;
-}
-
-/* Responsivo */
+/* 🔧 Responsividade para celular */
 @media (max-width: 600px) {
   .main-header {
-    padding: 12px 20px;
+    padding: 15px 20px;
   }
 
   .container {
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
 
   .nav-links {
-    display: none;
     flex-direction: column;
     gap: 12px;
     width: 100%;
-    margin-top: 12px;
+    margin-top: 10px;
   }
 
   .nav-links a {
@@ -98,15 +84,5 @@ ajusta esse codigo aqui
     font-size: 0.9rem;
     width: 100%;
     text-align: center;
-  }
-
-  /* Mostra o botão de menu hambúrguer */
-  .menu-icon {
-    display: block;
-  }
-
-  /* Quando o checkbox está checado, mostra o menu */
-  #menu-toggle:checked + .menu-icon + .nav-links {
-    display: flex;
   }
 }
