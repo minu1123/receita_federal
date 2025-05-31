@@ -1,7 +1,7 @@
 .main-header {
   width: 100%;
   background: rgba(200, 255, 220, 0.5);
-  padding: 10px 20px;
+  padding: 20px 40px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
@@ -20,37 +20,19 @@
 }
 
 .logo {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: bold;
   color: #000000;
-  text-decoration: none;
 }
 
-/* Ícone do menu hamburguer */
-.menu-icon {
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
-  color: #0c2b22;
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  z-index: 200;
-}
-
-/* Oculta o checkbox */
-#menu-toggle {
-  display: none;
-}
-
-/* Menu */
+/* Links padrão */
 .nav-links {
   display: flex;
   gap: 24px;
 }
 
 .nav-links a {
-  color: #000;
+  color: #000000;
   font-size: 0.95rem;
   text-decoration: none;
   transition: color 0.3s;
@@ -60,6 +42,7 @@
   color: #00e676;
 }
 
+/* Botão "Fale Conosco" */
 .header-button {
   background-color: #03d46f;
   padding: 10px 20px;
@@ -73,19 +56,29 @@
   background-color: #00c853;
 }
 
-/* Responsivo */
+/* Oculta o checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Ícone do menu hambúrguer */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #0c2b22;
+}
+
+/* --- RESPONSIVO --- */
 @media (max-width: 600px) {
+  .main-header {
+    padding: 12px 20px;
+  }
+
   .container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .menu-wrapper {
-    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
   }
 
   .nav-links {
@@ -93,7 +86,7 @@
     flex-direction: column;
     gap: 12px;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 12px;
     background-color: rgba(200, 255, 220, 0.9);
     padding: 10px;
     border-radius: 8px;
@@ -105,13 +98,19 @@
   }
 
   .header-button {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    padding: 10px;
     width: 100%;
     text-align: center;
   }
 
-  /* Exibe menu quando checkbox ativado */
-  #menu-toggle:checked ~ .menu-icon + .menu-wrapper .nav-links {
+  /* Mostra o ícone do menu */
+  .menu-icon {
+    display: block;
+  }
+
+  /* Ativa o menu quando o checkbox está checado */
+  #menu-toggle:checked ~ .nav-links {
     display: flex;
   }
 }
