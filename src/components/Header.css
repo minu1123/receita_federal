@@ -13,10 +13,10 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
 }
 
 .header-left {
@@ -24,10 +24,9 @@
 }
 
 .header-center {
-  flex: 2;
-  display: flex;
-  justify-content: center;
-  transform: translateX(-60px); /* Puxa os links para mais perto da logo */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-60%); /* Desloca para a esquerda */
 }
 
 .header-right {
@@ -72,10 +71,12 @@
   background-color: #00c853;
 }
 
+/* Esconde checkbox do menu mobile */
 #menu-toggle {
   display: none;
 }
 
+/* Ícone do menu hambúrguer */
 .menu-icon {
   display: none;
   cursor: pointer;
@@ -87,7 +88,7 @@
   z-index: 200;
 }
 
-/* MOBILE */
+/* RESPONSIVO */
 @media (max-width: 600px) {
   .container {
     flex-direction: column;
@@ -99,6 +100,7 @@
   }
 
   .header-center {
+    position: static;
     transform: none;
     width: 100%;
   }
