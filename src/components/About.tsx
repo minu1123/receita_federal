@@ -7,7 +7,7 @@ const About: React.FC = () => {
       <div className="about-container">
         <h2>Sobre o Projeto</h2>
         <p className="about-intro">
-          Saiba como o SolarVape Charger funciona: do reaproveitamento à entrega de energia.
+          Saiba como o Enervape Charger funciona: do reaproveitamento à entrega de energia.
         </p>
         <div className="about-grid">
           <div className="about-card">
