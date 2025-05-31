@@ -1,6 +1,0 @@
-import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import './HowItWorks.css';
-const HowItWorks = () => {
-    return (_jsxs("section", { className: "how-it-works", id: "how", children: [_jsx("h2", { children: "Como Funciona" }), _jsxs("div", { className: "steps", children: [_jsxs("div", { className: "step", children: [_jsx("h3", { children: "\uD83D\uDD0B 1. Reaproveitamento da Bateria" }), _jsx("p", { children: "Extra\u00EDmos a bateria do vape ELF BAR BC4000 para reutiliz\u00E1-la como fonte de energia port\u00E1til." })] }), _jsxs("div", { className: "step", children: [_jsx("h3", { children: "\u26A1 2. Controle de Carga com TP4056" }), _jsx("p", { children: "Utilizamos um m\u00F3dulo TP4056 com prote\u00E7\u00E3o para gerenciar a recarga da bateria via painel solar ou USB." })] }), _jsxs("div", { className: "step", children: [_jsx("h3", { children: "\uD83D\uDD0C 3. Convers\u00E3o de Voltagem" }), _jsx("p", { children: "Com o m\u00F3dulo Boost (MT3608), elevamos de 3.7V para 5V, permitindo carregar dispositivos USB." })] }), _jsxs("div", { className: "step", children: [_jsx("h3", { children: "\uD83C\uDF1E 4. Energia Solar Opcional" }), _jsx("p", { children: "Um pequeno painel solar recarrega o sistema em locais p\u00FAblicos sem depender de energia el\u00E9trica." })] })] })] }));
-};
-export default HowItWorks;
