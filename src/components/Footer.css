@@ -44,12 +44,67 @@
   color: #00e676;
 }
 
-.footer-bottom {
-  text-align: center;
-  margin-top: 40px;
-  border-top: 1px solid #004d40;
-  padding-top: 20px;
+/* FORMULÁRIO AJUSTADO */
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+}
+
+.footer-form h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #00e676;
+}
+
+.footer-form input,
+.footer-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #003c33;
+  color: #e0f2f1;
+  font-size: 0.95rem;
+  outline: none;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-form input:focus,
+.footer-form textarea:focus {
+  background-color: #004d40;
+  box-shadow: 0 0 0 2px #00e676aa;
+}
+
+.footer-form input::placeholder,
+.footer-form textarea::placeholder {
   color: #a7ffeb;
+}
+
+.footer-form textarea {
+  resize: vertical;
+  min-height: 80px;
+  max-height: 160px;
+}
+
+.footer-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #00e676;
+  color: #003c33;
+  font-weight: bold;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer-form button:hover {
+  background-color: #00c965;
 }
 
 .footer-members {
@@ -59,3 +114,10 @@
   margin-top: 16px;
 }
 
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #004d40;
+  padding-top: 20px;
+  color: #a7ffeb;
+}
