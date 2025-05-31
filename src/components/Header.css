@@ -1,8 +1,8 @@
+/* Estilos gerais */
 .main-header {
   width: 100%;
   background: rgba(200, 255, 220, 0.5);
   padding: 20px 40px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -13,16 +13,16 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .logo {
   font-size: 1.6rem;
   font-weight: bold;
-  color: #000000;
+  color: #000;
   text-decoration: none;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .nav-links a {
-  color: #000000;
+  color: #000;
   font-size: 0.95rem;
   text-decoration: none;
   transition: color 0.3s;
@@ -59,15 +59,6 @@
   background-color: #00c853;
 }
 
-/* Oculta ou mostra por tipo de tela */
-.mobile-only {
-  display: none;
-}
-.desktop-only {
-  display: inline-block;
-}
-
-/* Menu hamburguer */
 #menu-toggle {
   display: none;
 }
@@ -75,15 +66,23 @@
 .menu-icon {
   display: none;
   font-size: 2rem;
-  color: #0c2b22;
   cursor: pointer;
+  color: #0c2b22;
   position: absolute;
   top: 16px;
   right: 20px;
-  z-index: 200;
+  z-index: 1000;
 }
 
-/* ---------- MOBILE ---------- */
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: inline-block;
+}
+
+/* Mobile */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -100,9 +99,9 @@
     transform: none;
     flex-direction: column;
     width: 100%;
-    margin-top: 56px;
     background: rgba(200, 255, 220, 0.9);
     padding: 16px;
+    margin-top: 60px;
     border-radius: 8px;
     gap: 16px;
   }
@@ -111,19 +110,13 @@
     display: flex;
   }
 
-  .nav-links a {
-    font-size: 1.1rem;
-    padding: 8px 0;
-    width: 100%;
-  }
-
   .header-button {
     width: 100%;
     text-align: center;
   }
 
   .mobile-only {
-    display: inline-block;
+    display: block;
   }
 
   .desktop-only {
