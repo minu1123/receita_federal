@@ -9,8 +9,8 @@ const Header: React.FC = () => {
         <nav className="nav-links">
           <a href="#mission">Missão</a>
           <a href="#about">Sobre</a>
-          <a href="#impact">Impacto</a>
-          <a href="#testimonials">Depoimentos</a>
+          <a href="#usecases">Casos de uso</a>
+          <a href="#footer">Enervape</a>
         </nav>
         <a href="#contato" className="header-button">Fale Conosco</a>
       </div>
