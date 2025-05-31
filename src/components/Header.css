@@ -1,7 +1,7 @@
 .main-header {
   width: 100%;
   background: rgba(200, 255, 220, 0.5);
-  padding: 20px 40px;
+  padding: 16px 24px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
@@ -23,11 +23,12 @@
   font-size: 1.6rem;
   font-weight: bold;
   color: #000000;
+  text-decoration: none;
 }
 
-/* Links padrão (desktop) */
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 24px;
 }
 
@@ -55,7 +56,7 @@
   background-color: #00c853;
 }
 
-/* Esconde o checkbox do menu */
+/* Esconde o checkbox */
 #menu-toggle {
   display: none;
 }
@@ -67,13 +68,13 @@
   font-size: 2rem;
   color: #0c2b22;
   position: absolute;
-  top: 18px;
-  right: 20px;
+  top: 20px;
+  right: 24px;
   z-index: 200;
 }
 
-/* --- MOBILE ONLY --- */
-@media (max-width: 600px) {
+/* --- MOBILE --- */
+@media (max-width: 768px) {
   .container {
     flex-direction: column;
     align-items: flex-start;
@@ -83,21 +84,20 @@
     display: block;
   }
 
-  /* Esconde o menu de links no mobile */
   .nav-links {
     display: none;
     flex-direction: column;
-    gap: 12px;
     width: 100%;
-    margin-top: 48px;
     background-color: rgba(200, 255, 220, 0.95);
-    padding: 10px;
+    padding: 16px;
     border-radius: 8px;
+    margin-top: 48px;
+    gap: 16px;
   }
 
   .nav-links a {
-    font-size: 1rem;
     padding: 8px 0;
+    width: 100%;
   }
 
   .header-button {
@@ -105,7 +105,7 @@
     text-align: center;
   }
 
-  /* Exibe menu quando ativado */
+  /* Mostra o menu ao clicar */
   #menu-toggle:checked + .menu-icon + .nav-links {
     display: flex;
   }
