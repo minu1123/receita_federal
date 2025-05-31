@@ -69,7 +69,7 @@
   cursor: pointer;
   color: #0c2b22;
   position: absolute;
-  top: 6px; /* ícone vai ficar colado no topo */
+  top: 20px; /* ícone vai ficar colado no topo */
   right: 20px;
   z-index: 1000;
 }
