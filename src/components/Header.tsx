@@ -5,7 +5,7 @@ const Header: React.FC = () => {
   return (
     <header className="main-header">
       <div className="container">
-        <div className="logo">Enervape</div>
+      <a href="#inicio"><div className="logo">Enervape</div></a>  
         <nav className="nav-links">
           <a href="#mission">Missão</a>
           <a href="#about">Sobre</a>

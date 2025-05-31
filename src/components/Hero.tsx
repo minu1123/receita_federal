@@ -4,7 +4,7 @@ import vapeImg from '../assets/vape.png'; // ajuste para o nome real do arquivo
 
 const Hero: React.FC = () => {
   return (
-    <section className="hero-modern">
+    <section className="hero-modern" id ="inicio">
       <div className="hero-container">
         <div className="hero-text">
           <h1>
