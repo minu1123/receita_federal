@@ -1,5 +1,5 @@
 import React from 'react';
-import './UseCases.css';
+import './useCases.css';
 
 import imgBus from '../assets/bus-stop.png';
 import imgVape from '../assets/adptado.png';

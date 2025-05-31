@@ -1,5 +1,5 @@
 import React from 'react';
-import './HowItWorks.css';
+import './howItWorks.css';
 
 const HowItWorks: React.FC = () => {
   return (
