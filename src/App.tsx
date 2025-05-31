@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from './components/header';
-import Hero from './components/hero';
-import Mission from './components/mission';
-import About from './components/about';
-import UseCases from './components/useCases';
-import Footer from './components/footer';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Mission from './components/Mission';
+import About from './components/About';
+import UseCases from './components/UseCases';
+import Footer from './components/Footer';
 
 
 // (mais tarde: About, HowItWorks, Testimonials, Footer...)
