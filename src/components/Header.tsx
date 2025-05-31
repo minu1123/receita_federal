@@ -15,9 +15,10 @@ const Header: React.FC = () => {
           <a href="#about">Sobre</a>
           <a href="#usecases">Casos de uso</a>
           <a href="#footer">Enervape</a>
+          <a href="#contato" className="header-button mobile-only">Fale Conosco</a>
         </nav>
 
-        <a href="#contato" className="header-button">Fale Conosco</a>
+        <a href="#contato" className="header-button desktop-only">Fale Conosco</a>
       </div>
     </header>
   );
