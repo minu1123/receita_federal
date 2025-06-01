@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="footer-members">
-        <p><strong>Equipe:</strong> Micael Costa, Miszael Costa, Rafael Costa e Willian Bizzero</p>
+        <p><strong>Equipe:</strong> Micael Costa, Miszael Costa, Rafael Costa e Willian Henrique</p>
       </div>
 
       <div className="footer-bottom">
